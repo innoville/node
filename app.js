@@ -4,8 +4,8 @@ var mysql = require('mysql');
 //var aws = require('aws-sdk');
 //var rds = new aws.rds();
 
-var host = "dbinstance.c1uvq3j2zs5y.us-east-1.rds.amazonaws.com"; 
-var database = "mdb";
+var host = "aurora.c1uvq3j2zs5y.us-east-1.rds.amazonaws.com"; 
+var database = "aurora";
 var user = "yong";
 var password = "11111111";
 var connection = mysql.createConnection({
