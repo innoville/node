@@ -1,15 +1,18 @@
 var express = require('express');
 var app = express();
 var mysql = require('mysql');
-var aws = require('aws-sdk');
+//var aws = require('aws-sdk');
 //var rds = new aws.rds();
 
-
+var host = "dbinstance.c1uvq3j2zs5y.us-east-1.rds.amazonaws.com"; 
+var database = "mdb";
+var user = "yong";
+var password = "11111111";
 var connection = mysql.createConnection({
-  host: "dbinstance.c1uvq3j2zs5y.us-east-1.rds.amazonaws.com",
-  user: "yong", 
-  password: "11111111",
-  port: "3306" 
+  host: host,
+  user: user, 
+  password: password,
+  port: 3306 
 });
 
 console.log(process.env.RDS_USERNAME);
