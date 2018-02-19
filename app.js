@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var mysql = require('mysql');
 var aws = require('aws-sdk');
-var rds = new aws.rds();
+//var rds = new aws.rds();
 
 
 var connection = mysql.createConnection({
