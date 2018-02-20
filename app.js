@@ -1,9 +1,10 @@
 var express = require('express');
 var app = express();
-var mysql = require('mysql');
+//var mysql = require('mysql');
 //var aws = require('aws-sdk');
 //var rds = new aws.rds();
 
+/*
 var host = "aurora-cluster.cluster-c1uvq3j2zs5y.us-east-1.rds.amazonaws.com"; 
 var database = "aurora";
 var user = "yong";
@@ -25,6 +26,8 @@ connection.connect(function(err){
   console.log("DB Connected");
 });
 connection.end();
+*/
+
 app.get('/', function (req, res){
   console.log(__dirname);
   res.sendFile(__dirname+'/index.html');
