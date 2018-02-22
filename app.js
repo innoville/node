@@ -1,22 +1,19 @@
 var express = require('express');
 var app = express();
-//var mysql = require('mysql');
+var mysql = require('mysql');
 //var aws = require('aws-sdk');
 //var rds = new aws.rds();
 
-/*
-var host = "aurora-cluster.cluster-c1uvq3j2zs5y.us-east-1.rds.amazonaws.com"; 
+var host = "database.c1uvq3j2zs5y.us-east-1.rds.amazonaws.com";
 var database = "aurora";
-var user = "yong";
-var password = "11111111";
+var user = "admin";
+var password = "dlqldjemals";
 var connection = mysql.createConnection({
   host: host,
   user: user, 
   password: password,
   port: 3306 
 });
-
-console.log(process.env.RDS_USERNAME);
 
 connection.connect(function(err){
   if(err) {
@@ -26,7 +23,7 @@ connection.connect(function(err){
   console.log("DB Connected");
 });
 connection.end();
-*/
+//*/
 
 app.get('/', function (req, res){
   console.log(__dirname);
