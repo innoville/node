@@ -3,11 +3,10 @@ var app = express();
 var mysql = require('mysql');
 //var aws = require('aws-sdk');
 //var rds = new aws.rds();
-
-var host = "database.c1uvq3j2zs5y.us-east-1.rds.amazonaws.com";
+var host = "db-instance.c1uvq3j2zs5y.us-east-1.rds.amazonaws.com";
 var database = "aurora";
 var user = "admin";
-var password = "dlqldjemals";
+var password = "elqldjemals";
 var connection = mysql.createConnection({
   host: host,
   user: user, 
