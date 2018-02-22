@@ -18,6 +18,7 @@ var connection = mysql.createConnection({
 connection.connect(function(err){
   if(err) {
     console.log("DB Connection Error");
+    console.log(err);
     return;
   }
   console.log("DB Connected");
